@@ -4,7 +4,7 @@ using System.Security.Principal;
 using System.Threading.Tasks;
 using System.Timers;
 using CommandLine;
-using SharpHound3.Tasks;
+using myhound3.Tasks;
 
 namespace myhound3
 {
