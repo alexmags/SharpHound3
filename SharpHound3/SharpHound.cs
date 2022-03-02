@@ -6,9 +6,9 @@ using System.Timers;
 using CommandLine;
 using SharpHound3.Tasks;
 
-namespace SharpHound3
+namespace myhound3
 {
-    internal class SharpHound
+    internal class myhound
     {
         /// <summary>
         /// Entry point for SharpHound. 
@@ -30,7 +30,7 @@ namespace SharpHound3
                 //We've successfully parsed arguments, lets do some options post-processing.
                 var currentTime = DateTime.Now;
                 var initString =
-                    $"Initializing SharpHound at {currentTime.ToShortTimeString()} on {currentTime.ToShortDateString()}";
+                    $"Initializing myhound at {currentTime.ToShortTimeString()} on {currentTime.ToShortDateString()}";
                 Console.WriteLine(new string('-', initString.Length));
                 Console.WriteLine(initString);
                 Console.WriteLine(new string('-', initString.Length));
@@ -233,7 +233,7 @@ namespace SharpHound3
         }
 
         // Accessor function for the PS1 to work, do not change or remove
-        public static void InvokeSharpHound(string[] args)
+        public static void InvokemyHound(string[] args)
         {
             Main(args).Wait();
         }
